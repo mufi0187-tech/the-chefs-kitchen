@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - The Chef's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .contact-heading {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .contact-heading h2 {
+            color: #641d39;
+            font-size: 36px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px 5% 50px;
+            flex-wrap: wrap;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 420px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .contact-box h3 {
+            color: #641d39;
+            margin-bottom: 25px;
+            font-size: 23px;
+        }
+
+        .contact-box p {
+            font-size: 17px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .contact-box input,
+        .contact-box textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        .contact-box textarea {
+            height: 110px;
+            resize: vertical;
+        }
+
+        .contact-box button {
+            background: #168581;
+            color: white;
+            border: none;
+            padding: 13px 30px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-box button:hover {
+            background: #641d39;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="administration.html">Administration</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Contact Heading -->
+    <section class="contact-heading">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you!</p>
+    </section>
+
+    <!-- Contact Details and Form -->
+    <section class="contact-container">
+
+        <!-- Restaurant Information -->
+        <div class="contact-box">
+            <h3>Visit Our Restaurant</h3>
+
+            <p>📍 Address: Chennai, Tamil Nadu, India</p>
+
+            <p>📞 Phone: +91 98765 43210</p>
+
+            <p>✉ Email: chefskitchen@gmail.com</p>
+
+            <p>🕒 Opening Hours: 10 AM - 10 PM</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-box">
+            <h3>Send Us a Message</h3>
+
+            <form onsubmit="alert('Thank you for contacting The Chef’s Kitchen! Your message has been received in this demo.'); return false;">
+
+                <input type="text"
+                       placeholder="Your Name"
+                       required>
+
+                <input type="email"
+                       placeholder="Your Email"
+                       required>
+
+                <input type="tel"
+                       placeholder="Your Phone Number"
+                       required>
+
+                <textarea placeholder="Your Message"
+                          required></textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed by: Mufeedha Hamid</p>
+        <p>© 2026 The Chef's Kitchen. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

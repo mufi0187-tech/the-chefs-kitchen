@@ -1,0 +1,253 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F4ED;
+    color: #252525;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+header img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+header h1 {
+    color: #641D35;
+    margin: 10px;
+}
+
+header p {
+    color: #177D78;
+    letter-spacing: 3px;
+}
+
+nav {
+    background-color: #641D35;
+    padding: 18px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #D5A65A;
+}
+
+.hero {
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("images/banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 130px 20px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #177D78;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about h2 {
+    color: #641D35;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+
+footer {
+    background-color: #641D35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-heading {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.menu-heading h2 {
+    color: #641D35;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px 7%;
+}
+
+.food-item {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.food-item img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.food-item h3 {
+    color: #641D35;
+    margin: 12px;
+}
+
+.food-item p {
+    line-height: 1.5;
+}
+
+.food-item h4 {
+    color: #177D78;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+@media (max-width: 700px) {
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px 7%;
+}
+
+.team-card {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-card h3 {
+    color: #641D35;
+    margin: 15px 0 8px;
+}
+
+.team-card p {
+    color: #177D78;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px 8%;
+}
+
+.contact-info,
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.contact-info h3,
+.contact-form h3 {
+    color: #641D35;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial;
+}
+
+.contact-form button {
+    background-color: #177D78;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #641D35;
+}
+
+@media (max-width: 700px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
